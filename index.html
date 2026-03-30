@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ta Ray - ร้านตาเรย์ รับฝากขาย & หาไอดี</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Mitr', 'sans-serif'] },
+                    colors: {
+                        cream: '#02020B', /* พื้นหลังสีดำเข้มดุดัน */
+                        navy: {
+                            light: '#3B82F6',
+                            DEFAULT: '#1D4ED8',
+                            dark: '#0D1546'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #02020B; color: #779ABF; } /* เปลี่ยนสีตัวอักษรให้ออกฟ้าเทาเท่ๆ */
+        .card-blue { 
+            background: #0D1546; /* สีการ์ดน้ำเงินเข้ม */
+            border-radius: 1.5rem; 
+            border: 1px solid rgba(59, 130, 246, 0.3); 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+        }
+        .price-row:hover { background-color: rgba(59, 130, 246, 0.2); transition: 0.2s; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="max-w-md mx-auto min-h-screen bg-cream shadow-2xl relative">
+        
+        <header class="bg-gradient-to-b from-navy-dark to-cream pt-10 pb-12 px-6 rounded-b-[3rem] text-center text-white border-b border-navy-light/20">
+            <div class="w-28 h-28 mx-auto rounded-2xl border-4 border-navy-light overflow-hidden mb-4 bg-white shadow-lg">
+                <img src="IMG_7201.jpeg" alt="Logo" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/200?text=Ta+Ray';">
+            </div>
+            <h1 class="text-3xl font-bold text-white uppercase tracking-wider">Ta Ray</h1>
+            <p class="text-[11px] mt-2 opacity-80 leading-relaxed px-4">
+                ร้าน Ta Ray รับฝากขาย รับทำป้ายฝากขาย ป้ายเรทต่างๆ ป้ายคิวอาร์ ปกเครดิต ป้ายไอดียังไม่รับทำและรับหาไอดี
+            </p>
+        </header>
+
+        <main class="px-5 py-8 space-y-8">
+
+            <section>
+                <a href="https://docs.google.com/spreadsheets/d/1-kKlNjdrTLPbQ0ogYQt7Fb-QtCoLyMmX0H57NfEOMwA/edit?usp=drivesdk" target="_blank" class="w-full bg-gradient-to-r from-navy-dark to-navy text-white p-4 rounded-2xl flex items-center justify-center gap-3 shadow-lg hover:scale-105 transition-transform border border-navy-light/30">
+                    <i data-lucide="calendar"></i> <b>คลิกเพื่อเช็คคิวงานที่นี่</b>
+                </a>
+            </section>
+
+            <section class="card-blue p-5">
+                <div class="flex items-center gap-2 mb-4 border-b pb-2 border-navy-light/20">
+                    <i data-lucide="tag" class="text-navy-light"></i>
+                    <h2 class="text-lg font-semibold text-white">เรทราคาฝากขาย (TABAY)</h2>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-x-4 gap-y-1 text-[11px] text-white/90">
+                    <div class="space-y-1">
+                        <div class="flex justify-between price-row p-1 rounded"><span>500 – 900</span> <span>15 B</span></div>
+                        <div class="flex justify-between price-row p-1 rounded"><span>1000 – 1499</span> <span>25 B</span></div>
+                        <div class="flex justify-between price-row p-1 rounded"><span>1500 – 1999</span> <span>30 B</span></div>
+                        <div class="flex justify-between price-row p-1 rounded"><span>2000 – 2499</span> <span>45 B</span></div>
+                        <div class="flex justify-between price-row p-1 rounded"><span>2500 – 4499</span> <span>57 B</span></div>
+                        <div class="flex justify-between price-row p-1 rounded"><span>4500 – 5999</span> <span>65 B</span></div>
+                        <div class="flex justify-between price-row p-1 rounded"><span>6000 – 7500</span> <span>80 B</span></div>
+                        <div class="flex justify-between price-row p-1 rounded"><span>7501 – 8500</span> <span>95 B</span></div>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="flex justify-between price-row p-1 rounded"><span>8501 – 9999</span> <span>145 B</span></div>
+                        <div class="flex justify-between price-row p-1 rounded font-bold text-navy-light"><span>10,000+</span> <span>1.9%</span></div>
+                        <div class="flex justify-between price-row p-1 rounded"><span>14,000+</span> <span>2.5%</span></div>
+                        <div class="flex justify-between price-row p-1 rounded"><span>19,000+</span> <span>3.5%</span></div>
+                        <div class="flex justify-between price-row p-1 rounded"><span>30,000+</span> <span>4.5%</span></div>
+                        <div class="flex justify-between price-row p-1 rounded"><span>50,000+</span> <span>4.7%</span></div>
+                        <div class="flex justify-between price-row p-1 rounded"><span>70,000+</span> <span>5%</span></div>
+                        <div class="flex justify-between price-row p-1 rounded"><span>100,000</span> <span>5.5%</span></div>
+                    </div>
+                </div>
+                <p class="text-[10px] mt-4 text-red-400 font-medium">* คนที่เพิ่งใช้บริการจ่ายก่อนทุกกรณี</p>
+            </section>
+
+            <section class="card-blue p-5">
+                <div class="flex items-center gap-2 mb-4 border-b pb-2 border-navy-light/20">
+                    <i data-lucide="search" class="text-navy-light"></i>
+                    <h2 class="text-lg font-semibold text-white">เรทราคาหาไอดี</h2>
+                </div>
+                
+                <div class="space-y-1 text-[11px] text-white/90">
+                    <div class="flex justify-between price-row p-1 rounded"><span>1 – 900</span> <span>40 B</span></div>
+                    <div class="flex justify-between price-row p-1 rounded"><span>901 – 1900</span> <span>57 B</span></div>
+                    <div class="flex justify-between price-row p-1 rounded"><span>1901 – 3500</span> <span>75 B</span></div>
+                    <div class="flex justify-between price-row p-1 rounded"><span>3501 – 6000</span> <span>90 B</span></div>
+                    <div class="flex justify-between price-row p-1 rounded"><span>6001 – 9000</span> <span>120 B</span></div>
+                    <div class="flex justify-between price-row p-1 rounded"><span>9001 – 9,999</span> <span>145 B</span></div>
+                    <div class="flex justify-between price-row p-1 rounded font-bold text-navy-light"><span>10,000+++</span> <span>170 B</span></div>
+                    <div class="flex justify-between price-row p-1 rounded"><span>15,000+++</span> <span>200 B</span></div>
+                    <div class="flex justify-between price-row p-1 rounded"><span>30,000+++</span> <span>250 B</span></div>
+                    <div class="flex justify-between price-row p-1 rounded"><span>50,000+++</span> <span>275 B</span></div>
+                    <div class="flex justify-between price-row p-1 rounded font-bold"><span>100,000+++</span> <span>300 B</span></div>
+                </div>
+            </section>
+
+            <section class="card-blue p-5 border-l-4 border-navy-light">
+                <h3 class="font-bold mb-3 flex items-center gap-2 text-white"><i data-lucide="info"></i> วิธีการฝากขายร้าน Ta Ray</h3>
+                <p class="text-xs mb-2 font-medium text-navy-light uppercase">ต้องเตรียมรูปดังนี้:</p>
+                <ul class="text-xs space-y-1 list-disc list-inside text-white/70">
+                    <li>สกิน เครื่องประดับ สัตว์เลี้ยง</li>
+                    <li>ของในคลัง ยอดเติม แรงค์</li>
+                    <li>และจะมีแบบฟอร์มให้กรอก</li>
+                </ul>
+            </section>
+
+            <section class="card-blue p-5">
+                <h3 class="font-bold mb-4 text-center text-white underline decoration-navy-light">ขั้นตอนการสั่งซื้อ</h3>
+                <div class="space-y-4 text-white/80">
+                    <div class="flex gap-3 items-start">
+                        <span class="bg-navy-light text-white rounded-full w-5 h-5 flex items-center justify-center text-[10px] shrink-0 mt-1">1</span>
+                        <p class="text-xs">ทักแชทแจ้งความต้องการ (หาไอดี / ฝากขาย / ทำป้ายเรท)</p>
+                    </div>
+                    <div class="flex gap-3 items-start">
+                        <span class="bg-navy-light text-white rounded-full w-5 h-5 flex items-center justify-center text-[10px] shrink-0 mt-1">2</span>
+                        <p class="text-xs">ส่งรายละเอียดตามบรีฟ ฟอร์ม หรือรูปภาพที่ต้องใช้ทำป้าย</p>
+                    </div>
+                    <div class="flex gap-3 items-start">
+                        <span class="bg-navy-light text-white rounded-full w-5 h-5 flex items-center justify-center text-[10px] shrink-0 mt-1">3</span>
+                        <p class="text-xs">ชำระเงินตามเรทราคาที่ตกลง (ชำระก่อนเริ่มงาน)</p>
+                    </div>
+                    <div class="flex gap-3 items-start">
+                        <span class="bg-navy-light text-white rounded-full w-5 h-5 flex items-center justify-center text-[10px] shrink-0 mt-1">4</span>
+                        <p class="text-xs">รอรับคิวและงานตามกำหนด เช็คคิวผ่านเว็บได้เลยครับ</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="space-y-3">
+                <h3 class="font-bold text-white flex items-center gap-2 px-2"><i data-lucide="help-circle"></i> คำถามที่พบบ่อย</h3>
+                <div class="card-blue p-4 text-xs space-y-3">
+                    <div>
+                        <p class="font-bold text-navy-light">Q: รับงานด่วนไหมครับ?</p>
+                        <p class="text-white/70">A: สามารถทักมาสอบถามคิวงานก่อนได้ครับ หากคิวไม่เยอะทางร้านยินดีลัดคิวให้ฟรี</p>
+                    </div>
+                    <div class="border-t pt-3 border-navy-light/10">
+                        <p class="font-bold text-navy-light">Q: มีประกันหลังการขายไหม?</p>
+                        <p class="text-white/70">A: หากงานเกิดข้อผิดพลาดจากทางร้าน (สะกดผิด/ข้อมูลตกหล่น) แก้ไขให้ฟรีทันทีครับ</p>
+                    </div>
+                    <div class="border-t pt-3 border-navy-light/10">
+                        <p class="font-bold text-navy-light">Q: สามารถยกเลิกงานและขอคืนเงินได้ไหม?</p>
+                        <p class="text-white/70">A: หากทางร้านเริ่มดำเนินการไปแล้ว จะไม่สามารถขอคืนเงินได้ในทุกกรณีครับ</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="bg-navy-dark pt-10 pb-12 px-6 rounded-t-[3rem] text-center border-t border-navy-light/20">
+            <h2 class="text-xs font-bold mb-6 tracking-[0.2em] text-navy-light uppercase">Contact Us</h2>
+            <div class="flex flex-col items-center gap-3">
+                <a href="https://www.facebook.com/share/1HXq3wncat/?mibextid=wwXIfr" target="_blank" class="w-full max-w-[240px] bg-navy-light text-white py-3 rounded-full text-[11px] font-bold shadow-lg hover:-translate-y-1 transition-transform uppercase">
+                    Facebook Page
+                </a>
+                <p class="text-[10px] mt-4 opacity-40 text-white font-light">ขอบคุณที่ไว้วางใจ Ta Ray</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
